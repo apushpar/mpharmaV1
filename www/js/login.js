@@ -1,4 +1,4 @@
-var serviceURL = "http://slatebot.com/mpharmaV1/webservice";
+var serviceURL = ""; //webservice url. Add your webservice url here
 
 var employees;
 
