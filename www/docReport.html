@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+
+<body>
+
+<!-- --------------------------------------Create Report Page------------------ -->
+<div id="docReport" data-role="page">
+
+    <div data-role="header" data-theme="b">
+        <h1>Report: Doctor</h1>
+        <img src="image/only_logo_1.png" class="ui-btn-left" />
+        <!-- <a href="#" id="gift" data-icon="custom" data-role="button" class="ui-btn-right"></a> -->
+        <input type="button" value="Gift" id="giftButton" data-icon="star" class="ui-btn-right" >
+    </div>
+<!-- <a id='lnkDialog' href="#dialog" data-rel="dialog" data-transition="pop" style='display:none;'></a> -->
+    <div data-role="content"  data-iscroll>    
+
+	<div id="test123"></div>
+	<div id="test234"></div>
+	<div id='group_checkboxes' data-role="fieldcontain"></div>
+	
+<!-- 	<div data-role="fieldcontain" class="cbDiv">
+            <fieldset data-role="controlgroup" data-type="horizontal" class="cbGroup">
+            </fieldset>
+        </div> -->
+
+   <!--  <input type="submit" value="Save" id="docSubmitButton" data-theme="b"> -->
+   <a data-role="button" href="#" id="docSubmitButton" data-theme="b">Save</a>
+<div id="divMsg" style="display:none;" align="center">
+    <img src="image/load.gif" alt="Please wait.."/>
+    </div>
+        
+    </div>
+<!-- --------------------------------------footer start------------------ -->
+	<style>	
+		.nav-glyphish-example .ui-btn .ui-btn-inner { padding-top: 40px !important; }
+		.nav-glyphish-example .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+		#chat .ui-icon { background:  url(glyphish-icons/09-chat-2.png) 50% 50% no-repeat; background-size: 24px 22px; }
+		#user .ui-icon { background:  url(glyphish-icons/111-user.png) 50% 50% no-repeat; background-size: 22px 24px;  }
+		#login .ui-icon { background:  url(glyphish-icons/30-key.png) 50% 50% no-repeat;  background-size: 12px 26px; }
+		#notepad .ui-icon { background:  url(glyphish-icons/179-notepad.png) 50% 50% no-repeat;  background-size: 22px 27px; }
+		#pencil .ui-icon { background:  url(glyphish-icons/187-pencil.png) 50% 50% no-repeat;  background-size: 20px 24px; }
+		#food .ui-icon { background:  url(glyphish-icons/11-clock.png) 50% 50% no-repeat;  background-size: 24px 24px; }
+		#gift .ui-icon { background:  url(glyphish-icons/24-gift.png) 50% 50% no-repeat;  background-size: 22px 26px; }
+	</style>
+	
+	<div data-role="footer" class="nav-glyphish-example" data-position="fixed"  data-theme="b">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c" >
+		<ul>
+			<!-- <li><a href="#" id="chat" data-icon="custom">Chat</a></li> -->
+			<li><a href="index.html" id="user" data-icon="custom">Login</a></li>
+			<li><a href="weekList.html" id="pencil" data-icon="custom" class="ui-btn-active">Create</a></li>
+			<li><a href="readReport.html" id="notepad" data-icon="custom">Read</a></li>
+			<li><a href="createClient.html" id="food" data-icon="custom">Reminder</a></li>
+		</ul>
+		</div>
+	</div>
+<!-- --------------------------------------footer end------------------ -->
+
+</div>
+
+
+<!-- -------------------------------------------dialog page----------------- -->
+
+
+
+</body>
+</html>

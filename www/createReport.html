@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+
+<body>
+
+<!-- --------------------------------------Create Report Page------------------ -->
+<div id="CreateReport" data-role="page">
+
+    <div data-role="header" data-theme="b">
+        <h1>Create Report</h1>
+        <img src="image/only_logo_1.png" class="ui-btn-left" />
+        <!-- <a href="#" id="addOrderButton" data-role="button" data-icon="false" class="ui-btn-right">Add</a> -->
+        <input type="button" value="Add" data-icon="plus" id="addOrderButton" class="ui-btn-right">
+    </div>
+
+    <div data-role="content" data-theme="b" data-iscroll>    
+
+        <form id="CreateReportForm">
+        <div id="dynamicInput" data-role="fieldcontain" data-theme="b" align="center">
+        
+            <!-- <label for="reportName">Report ID:</label>
+            <input type="text" name="reportName" id="reportName" value="" placeholder="Please enter report name" /> -->
+            
+            <div id="dynamicSelect">
+           <!--  <h2><label id="reportfieldOne"></label></h2> -->
+			   <!--<select name="reportfieldOne" id="reportfieldOne">
+			       <option value="Stockist A">Stockist A</option>
+			      <option value="Stockist B">Stockist B</option>
+			      <option value="Stockist C">Stockist C</option>
+			      <option value="Stockist D">Stockist D</option> 
+			   </select> -->
+   			</div>
+            <!-- <label for="reportfieldOne">Field 1</label>
+            <input type="text" name="reportfieldOne" id="reportfieldOne" value="" placeholder="Please enter field one" /> -->
+            
+            
+			<fieldset data-role="controlgroup" data-type="horizontal" >
+				<legend>Order Placed ?</legend>
+			     	<input type="radio" name="orderStatus" id="Yes" value="Order placed" />
+			     	<label for="Yes">Yes</label>
+			
+			     	<input type="radio" name="orderStatus" id="No" value="No order placed"  />
+			     	<label for="No">No</label>
+			</fieldset>
+            
+            <!-- <label for="reportfieldTwo">Field 2</label>
+            <input type="text" name="reportfieldTwo" id="reportfieldTwo" value="" placeholder="Please enter field two" /> -->
+        </div>
+
+<!--         <input type="submit" value="Save" id="createSubmitButton"> -->
+         <a data-role="button" href="#" id="createSubmitButton" data-theme="b">Save</a>
+        </form>
+        <div id="divMsg" style="display:none;" align="center">
+    <img src="image/load.gif" alt="Please wait.."/>
+    </div>
+    </div>
+<!-- --------------------------------------footer start------------------ -->
+	<style>	
+		.nav-glyphish-example .ui-btn .ui-btn-inner { padding-top: 40px !important; }
+		.nav-glyphish-example .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+		#chat .ui-icon { background:  url(glyphish-icons/09-chat-2.png) 50% 50% no-repeat; background-size: 24px 22px; }
+		#user .ui-icon { background:  url(glyphish-icons/111-user.png) 50% 50% no-repeat; background-size: 22px 24px;  }
+		#login .ui-icon { background:  url(glyphish-icons/30-key.png) 50% 50% no-repeat;  background-size: 12px 26px; }
+		#notepad .ui-icon { background:  url(glyphish-icons/179-notepad.png) 50% 50% no-repeat;  background-size: 22px 27px; }
+		#pencil .ui-icon { background:  url(glyphish-icons/187-pencil.png) 50% 50% no-repeat;  background-size: 20px 24px; }
+		#food .ui-icon { background:  url(glyphish-icons/11-clock.png) 50% 50% no-repeat;  background-size: 24px 24px; }
+	</style>
+	
+	<div data-role="footer" class="nav-glyphish-example" data-position="fixed"  data-theme="b">
+		<div data-role="navbar" class="nav-glyphish-example" data-grid="c" >
+		<ul>
+			<!-- <li><a href="#" id="chat" data-icon="custom">Chat</a></li> -->
+			<li><a href="index.html" id="user" data-icon="custom">Login</a></li>
+			<li><a href="weekList.html" id="pencil" data-icon="custom" class="ui-btn-active">Create</a></li>
+			<li><a href="readReport.html" id="notepad" data-icon="custom">Read</a></li>
+			<li><a href="createClient.html" id="food" data-icon="custom">Reminder</a></li>
+		</ul>
+		</div>
+	</div>
+<!-- --------------------------------------footer end------------------ -->
+
+</div>
+
+
+</body>
+</html>
